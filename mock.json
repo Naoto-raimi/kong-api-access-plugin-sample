@@ -1,0 +1,13 @@
+{
+  "request": {
+    "url": "/restriction",
+    "method": "GET"
+  },
+  "response": {
+    "status": 200,
+    "body": "{\"restriction\": true}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

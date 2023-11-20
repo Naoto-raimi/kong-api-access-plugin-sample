@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  kong:
+    build: .
+    container_name: kong
+    command: >
+      /bin/bash -c "
+      kong start"
+    environment:
+      - KONG_LOG_LEVEL=debug
+    restart: always
+    ports:
+      - 8000:8000
+  wiremock:
+    image: rodolpheche/wiremock
+    container_name: mock
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./mock.json:/home/wiremock/mappings/mock.json
+    restart: always
