@@ -3,7 +3,7 @@
 kong のプラグインから API を呼び出すサンプルになります  
 ここでは`restriction-check`という upstream を呼び出す前に規制情報を API から取得し、その値に応じてレスポンスを返すプラグインを作成しています
 
-詳しくは[Zenn の記事](https://zenn.dev/naoto_raimi/articles/443399837088a1)をご覧ください
+詳しくは[Zenn の記事](https://zenn.dev/naoto_raimi/articles/beaf60bc5e2867)をご覧ください
 
 ## App Start
 
